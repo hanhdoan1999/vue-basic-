@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1 class="text-center uppercase mt-10 font-semibold ">Ví dụ về giao tiếp giữa các component</h1>
+    <!-- <h1 class="text-center uppercase mt-10 font-semibold ">Ví dụ về giao tiếp giữa các component</h1>
     <ComponentA/>
     <hr>
     <h1 class="text-center uppercase mt-10 font-semibold ">Ví dụ về V-for + key</h1>
@@ -11,16 +11,19 @@
 
     <ComponentParent2 :title="title2"/>
 
-    <ComponentParent3 :title="title3"/>
+    <ComponentParent3 :title="title3"/> -->
+    <TreeDemo/>
+
   </div>
 </template>
 
 <script>
-import ComponentA from './components/ComponentA.vue';
-import ComponentParent1 from './components/ComponentParent1'
-import ComponentParent2 from './components/ComponentParent2'
-import ComponentParent3 from './components/ComponentParent3'
-import Loop from './components/Loop.vue';
+// import ComponentA from './components/ComponentA.vue';
+// import ComponentParent1 from './components/ComponentParent1'
+// import ComponentParent2 from './components/ComponentParent2'
+// import ComponentParent3 from './components/ComponentParent3'
+// import Loop from './components/Loop.vue';
+import TreeDemo from './components/TreeDemo'
 
 export default {
   data() {
@@ -32,11 +35,12 @@ export default {
   },
   name: "App",
   components: {
-ComponentParent1,
-ComponentParent2,
-ComponentParent3, 
-    ComponentA,
-    Loop,
+// ComponentParent1,
+// ComponentParent2,
+// ComponentParent3, 
+//     ComponentA,
+//     Loop,
+    TreeDemo,
   },
 };
 </script>
